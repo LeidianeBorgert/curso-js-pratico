@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/shared/auth.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>CodeHotel</h1>
+        <form id="loginForm" class="login-form" method="post">
+            <!--div.form-group>label{Usuário}+input:text#username[name=username][required]   isso se chama de emment-->
+            <div class="form-group">
+                <label for="">Usuário</label>
+                <input type="text" name="username" id="username" required="required">
+            </div>
+            <div class="form-group"><label for="senha">Senha</label><input type="password" name="senha" id="senha"
+                    required="required">
+            </div>
+            <!-- div.form-group.remember>input:checkbox#lembrar[name=lembrar]+label[for=lembrar]{Lembrar-me}-->
+            <div class="form-group remember">
+                <input type="checkbox" name="lembrar" id="lembrar">
+                <label for="lembrar">Lembrar-me</label>
+            </div>
+            <!--button:submit.btn{Entrar}+div.forgot>a[href="esqueceu-senha.html"]{Esqueceu a senha}-->
+            <button type="submit" class="btn">Entrar</button>
+            <div class="forgot">
+                <a href="esqueceu-senha.html">Esqueceu a senha?</a>
+            </div>
+
+
+        </form>
+        <script src="assets/js/login.js"></script>
+
+    </div>
+</body>
+
+</html>

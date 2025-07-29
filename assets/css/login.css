@@ -1,0 +1,55 @@
+
+form.login-form .form-group{
+    margin-bottom: 1rem;
+    text-align: left;
+}
+form.login-form label{
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+}
+form.login-form input[type="text"],
+form.login-form input[type="password"]{
+    width:100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+form.login-form .remeber{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+form.login-form .remeber input{
+  margin: 0;
+
+}
+.btn{
+    width: 100%;
+    background: #00796b;
+    color: #fff;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+
+}
+.btn:hover{
+    background: #005b40;
+}
+.forgot{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+.forgot a{
+    color:#00796b;
+    text-decoration: none;
+}
+.forgot a:hover{
+    text-decoration: underline;
+}
