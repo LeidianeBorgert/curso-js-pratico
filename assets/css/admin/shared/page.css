@@ -1,0 +1,16 @@
+@import url("utils.css");
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

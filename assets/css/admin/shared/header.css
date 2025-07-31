@@ -1,29 +1,4 @@
-:root{
-    --header-bg:#004d40;
-    --btn-bg:#00796b;
-    --btn-hover:#005b40;
-    --bg-main:#e0f2f1;
-    --card-bg:#fff;
-    --text-color:#333;
-    --badge-confirmada:#4caf50;
-    --badge-pendente:#ffeb3b;
-    --badge-cancelada:#f44336;
-
-}
-*{
-    box-sizing: border-box;
-
-}
-body{
-    margin: 0;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: var(--bg-main);
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-header{
+header {
     background-color: var(--header-bg);
     color: #fff;
     padding: 1rem;
@@ -31,32 +6,32 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-header h1{
+
+header h1 {
     margin: 0;
     font-size: 1.5rem;
 }
-nav ul{
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; 
+    display: flex;
     gap: 1rem;
 }
-nav a{
+
+nav a {
     color: #fff;
-    text-align:none;
+    text-align: none;
     font-weight: bold;
+    text-decoration: none;
 }
-nav a:hover{
+
+nav a:hover {
     text-decoration: underline;
 }
-main{
+
+main {
     flex: 1px;
     padding: 2rem;
 }
-
-
-
-
-
-

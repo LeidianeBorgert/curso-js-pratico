@@ -1,0 +1,15 @@
+:root{
+    --header-bg:#004d40;
+    --btn-bg:#00796b;
+    --btn-hover:#005b40;
+    --bg-main:#e0f2f1;
+    --card-bg:#fff;
+    --text-color:#333;
+    --badge-confirmada:#4caf50;
+    --badge-pendente:#ffeb3b;
+    --badge-cancelada:#f44336;
+    --text-light:#fff;
+    --border-color:#ccc;
+    --hover-row:#b2dfdb;
+
+}

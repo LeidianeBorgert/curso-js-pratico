@@ -1,0 +1,45 @@
+@import url("../../shared/cores.css");
+@import url("../../shared/page.css");
+@import url("../../shared/header.css");
+@import url("../../shared/footer.css");
+
+.hospedes-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.hospedes-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--header-bg);
+}
+
+.table-wrapper {
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--card-bg);
+
+}
+
+th,
+td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-bg);
+
+}
+
+th {
+    background-color: var(--header-bg);
+    color: var(--text-light);
+}
+
+tr:hover {
+    background-color: var(--hover-row);
+}

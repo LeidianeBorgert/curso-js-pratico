@@ -3,7 +3,7 @@ function fazerLogin(event){
     const usuario = document.getElementById("username").value.trim();
     const senha = document.getElementById("senha").value.trim();
     if(usuario === "root" && senha === "admin"){
-        window.location.href = "dashboard.html";
+        window.location.href = "admin/dashboard";
     }else{
         alert("Credenciais inválidas. Tente novamente.")
     }
