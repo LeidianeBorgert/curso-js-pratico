@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHotel - Quartos</title>
+    <link rel="stylesheet" href="../../assets/css/admin/pages/quartos/novo.css">
+</head>
+
+<body>
+    <header>
+        <h1>CodeHotel</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../dashboard">Início</a>
+                </li>
+                <li>
+                    <a href="../hospedes">Hóspedes</a>
+                </li>
+                <li>
+                    <a href="../reservas">Reservas</a>
+                </li>
+                <li>
+                    <a href="../quartos">Quartos</a>
+                </li>
+                <li>
+                    <a href="../servicos">Serviços</a>
+                </li>
+                <li>
+                    <a href="../relatorios">Relatórios</a>
+                </li>
+                <li>
+                    <a href="../configuracoes">Configurações</a>
+                </li>
+                <li>
+                    <a href="../logout.html">Sair</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="quartos-header">
+            <h2>Adicionar Quarto</h2>
+            <button class="btn btn-cancel" onclick="location.href='../quartos'">← Voltar</button>
+        </div>
+
+        <div class="form-container">
+            <form action="/quartos/salvar" method="POST">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="numero">Número do Quarto</label>
+                        <input type="text" id="numero" name="numero" placeholder="Ex: 101" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo">Tipo de Quarto</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">Selecione</option>
+                            <option value="solteiro">Solteiro</option>
+                            <option value="casal">Casal</option>
+                            <option value="familia">Família</option>
+                            <option value="luxo">Luxo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ocupacao">Ocupação Máxima</label>
+                        <input type="number" id="ocupacao" name="ocupacao" min="1" max="10" placeholder="Ex: 2"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preco">Preço por Noite (R$)</label>
+                        <input type="text" id="preco" name="preco" placeholder="Ex: 150.00" required>
+                    </div>
+                    <div class="form-group full">
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" name="descricao" rows="4"
+                            placeholder="Características do quarto..."></textarea>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-cancel" onclick="location.href='../quartos'">Cancelar</button>
+                    <button type="submit" class="btn">Salvar Quarto</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <span>&copy; 2025 CodeHotel. Todos os direitos reservados.</span>
+    </footer>
+</body>
+
+</html>
