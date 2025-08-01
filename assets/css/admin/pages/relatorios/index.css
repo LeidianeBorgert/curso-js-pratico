@@ -2,3 +2,72 @@
 @import url("../../shared/page.css");
 @import url("../../shared/header.css");
 @import url("../../shared/footer.css");
+
+.reports-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.reports-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--header-bg);
+}
+
+.report-meta {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.report-meta p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.chart-container {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.chart-container canvas {
+    width: 100%;
+    max-height: 400px;
+}
+
+.table-wrapper {
+    background-color: var(--card-bg);
+    border-radius: 4px;
+    overflow-x: auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--header-bg);
+    color: var(--text-light);
+}
+
+tr:hover {
+    background-color: var(--hover-row);
+}
