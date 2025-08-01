@@ -2,3 +2,134 @@
 @import url("../../shared/page.css");
 @import url("../../shared/header.css");
 @import url("../../shared/footer.css");
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    color: var(--header-bg);
+}
+
+.card p {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card .footer {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.card .footer a {
+    text-decoration: none;
+    color: var(--btn-bg);
+    font-size: 0.9rem;
+}
+
+.card .footer a:hover {
+    color: var(--btn-hover);
+}
+
+.recent-reservations {
+    background-color: var(--card-bg);
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.recent-reservations h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: var(--header-bg);
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--header-bg);
+    color: var(--text-light);
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.badge-confirmada {
+    background-color: var(--badge-confirmada);
+    color: var(--text-light);
+}
+
+.badge-pendente {
+    background-color: var(--badge-pendente);
+    color: var(--text-color);
+}
+
+.badge-cancelada {
+    background-color: var(--badge-cancelada);
+    color: var(--text-light);
+}
+
+.charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.chart-container {
+    background-color: var(--card-bg);
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    color: var(--header-bg);
+}
+
+.chart-container canvas {
+    width: 100%;
+    height: 150px;
+}
