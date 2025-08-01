@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br"></html>
+<html lang="pt-br">
+
+</html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeHotel - Quartos</title>
-    <link rel="stylesheet" href="../../assets/css/admin/pages/hospedes/index.css">
+    <link rel="stylesheet" href="../../assets/css/admin/pages/quartos/index.css">
 
 </head>
+
 <body>
     <!--header>nav>ul>li*8>a  emment-->
-     <header>
+    <header>
         <h1>CodeHotel</h1>
         <nav>
             <ul>
@@ -39,10 +43,82 @@
                 </li>
             </ul>
         </nav>
-     </header>
-     <main></main>
-     <footer>
+    </header>
+    <main>
+        <div class="quartos-header">
+            <h2>Quartos</h2>
+            <button class="btn" onclick="location.href='../quartos/novo.html'">
+                ➕ Adicionar Quarto
+            </button>
+        </div>
+
+        <div class="grid-wrapper">
+            <div class="grid-quartos">
+                <!-- Quarto 101 -->
+                <div class="quarto-card">
+                    <div class="quarto-info">
+                        <h3>Quarto 101</h3>
+                        <p>Tipo: Solteiro</p>
+                        <p>Ocupação: 1 pessoa</p>
+                        <p>Preço: R$ 120,00 / noite</p>
+                    </div>
+                    <div class="card-actions">
+                        <a class="btn" href="/quartos/editar/101">✏️</a>
+                        <button class="btn"
+                            onclick="if(confirm('Excluir quarto 101?')) location.href='/quartos/excluir/101'">🗑️</button>
+                    </div>
+                </div>
+
+                <!-- Quarto 102 -->
+                <div class="quarto-card">
+                    <div class="quarto-info">
+                        <h3>Quarto 102</h3>
+                        <p>Tipo: Casal</p>
+                        <p>Ocupação: 2 pessoas</p>
+                        <p>Preço: R$ 200,00 / noite</p>
+                    </div>
+                    <div class="card-actions">
+                        <a class="btn" href="/quartos/editar/102">✏️</a>
+                        <button class="btn"
+                            onclick="if(confirm('Excluir quarto 102?')) location.href='/quartos/excluir/102'">🗑️</button>
+                    </div>
+                </div>
+
+                <!-- Quarto 201 -->
+                <div class="quarto-card">
+                    <div class="quarto-info">
+                        <h3>Quarto 201</h3>
+                        <p>Tipo: Família</p>
+                        <p>Ocupação: 4 pessoas</p>
+                        <p>Preço: R$ 350,00 / noite</p>
+                    </div>
+                    <div class="card-actions">
+                        <a class="btn" href="/quartos/editar/201">✏️</a>
+                        <button class="btn"
+                            onclick="if(confirm('Excluir quarto 201?')) location.href='/quartos/excluir/201'">🗑️</button>
+                    </div>
+                </div>
+
+                <!-- Quarto 202 -->
+                <div class="quarto-card">
+                    <div class="quarto-info">
+                        <h3>Quarto 202</h3>
+                        <p>Tipo: Luxo</p>
+                        <p>Ocupação: 2 pessoas</p>
+                        <p>Preço: R$ 450,00 / noite</p>
+                    </div>
+                    <div class="card-actions">
+                        <a class="btn" href="/quartos/editar/202">✏️</a>
+                        <button class="btn"
+                            onclick="if(confirm('Excluir quarto 202?')) location.href='/quartos/excluir/202'">🗑️</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
         <span>&copy; 2025 CodeHotel. Todos os direitos reservados.</span>
-     </footer>
+    </footer>
 </body>
+
 </html>
