@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt-br"></html>
+<html lang="pt-br">
+
+</html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +10,10 @@
     <link rel="stylesheet" href="../../assets/css/admin/pages/reservas/index.css">
 
 </head>
+
 <body>
     <!--header>nav>ul>li*8>a  emment-->
-     <header>
+    <header>
         <h1>CodeHotel</h1>
         <nav>
             <ul>
@@ -39,10 +43,59 @@
                 </li>
             </ul>
         </nav>
-     </header>
-     <main></main>
-     <footer>
+    </header>
+    <main>
+        <div class="reservas-header">
+            <h2>Reservas</h2>
+            <button class="btn" onclick="location.href='../reservas/novo.html'">➕ Nova Reserva</button>
+        </div>
+
+        <div class="filter-bar">
+            <input type="date" id="fromDate" placeholder="Data início">
+            <input type="date" id="toDate" placeholder="Data fim">
+            <button class="btn" onclick="filtrarReservas()">Filtrar</button>
+        </div>
+
+        <div class="cards-grid">
+            <!-- Cartão de Reserva Exemplo -->
+            <div class="reservation-card">
+                <div class="card-header">Reserva #00123</div>
+                <div class="card-body">
+                    <p><strong>Hóspede:</strong> Ana Costa</p>
+                    <p><strong>Quarto:</strong> 202 (Casal)</p>
+                    <p><strong>Check-in:</strong> 28/07/2025</p>
+                    <p><strong>Check-out:</strong> 02/08/2025</p>
+                    <p><strong>Convidados:</strong> 2 adultos</p>
+                </div>
+                <div class="card-actions">
+                    <a class="btn" href="/reservas/editar/123">✏️ Editar</a>
+                    <button class="btn"
+                        onclick="if(confirm('Cancelar reserva #00123?')) location.href='/reservas/cancelar/123'">🗑️
+                        Cancelar</button>
+                </div>
+            </div>
+            <!-- Você pode duplicar este bloco para outras reservas -->
+            <div class="reservation-card">
+                <div class="card-header">Reserva #00124</div>
+                <div class="card-body">
+                    <p><strong>Hóspede:</strong> Bruno Silva</p>
+                    <p><strong>Quarto:</strong> 305 (Solteiro)</p>
+                    <p><strong>Check-in:</strong> 30/07/2025</p>
+                    <p><strong>Check-out:</strong> 01/08/2025</p>
+                    <p><strong>Convidados:</strong> 1 adulto</p>
+                </div>
+                <div class="card-actions">
+                    <a class="btn" href="/reservas/editar/124">✏️ Editar</a>
+                    <button class="btn"
+                        onclick="if(confirm('Cancelar reserva #00124?')) location.href='/reservas/cancelar/124'">🗑️
+                        Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
         <span>&copy; 2025 CodeHotel. Todos os direitos reservados.</span>
-     </footer>
+    </footer>
 </body>
+
 </html>

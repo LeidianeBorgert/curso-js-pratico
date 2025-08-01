@@ -2,3 +2,74 @@
 @import url("../../shared/page.css");
 @import url("../../shared/header.css");
 @import url("../../shared/footer.css");
+
+
+.services-header {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--header-bg);
+}
+
+.btn {
+    background-color: var(--btn-bg);
+    color: var(--text-light);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--btn-hover);
+}
+
+section.services-container {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+ul.services-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.service-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+li.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    line-height: 1;
+}
+
+.service-details h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1.1rem;
+    color: var(--header-bg);
+}
+
+.service-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}

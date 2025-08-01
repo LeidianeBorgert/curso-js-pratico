@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt-br"></html>
+<html lang="pt-br">
+
+</html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +10,10 @@
     <link rel="stylesheet" href="../../assets/css/admin/pages/relatorios/index.css">
 
 </head>
+
 <body>
     <!--header>nav>ul>li*8>a  emment-->
-     <header>
+    <header>
         <h1>CodeHotel</h1>
         <nav>
             <ul>
@@ -39,10 +43,73 @@
                 </li>
             </ul>
         </nav>
-     </header>
-     <main></main>
-     <footer>
+    </header>
+    <main>
+        <div class="reports-header">
+            <h2>Visualizar Relatório</h2>
+            <div>
+                <button class="btn" onclick="window.print()">🖨️ Imprimir PDF</button>
+                <button class="btn" a="../relatorios">← Voltar</button>
+            </div>
+        </div>
+
+        <!-- Metadados do relatório -->
+        <div class="report-meta">
+            <p><strong>Relatório:</strong> Ocupação Mensal</p>
+            <p><strong>Período:</strong> Julho 2025</p>
+            <p><strong>Gerado em:</strong> 25/07/2025</p>
+        </div>
+
+        <!-- Gráfico de ocupação -->
+        <div class="chart-container">
+            <canvas id="reportChart"></canvas>
+        </div>
+
+        <!-- Tabela de detalhes -->
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Ocupação (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/07</td>
+                        <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>02/07</td>
+                        <td>68</td>
+                    </tr>
+                    <tr>
+                        <td>03/07</td>
+                        <td>82</td>
+                    </tr>
+                    <tr>
+                        <td>04/07</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>05/07</td>
+                        <td>88</td>
+                    </tr>
+                    <!-- ... mais linhas ... -->
+                    <tr>
+                        <td>31/07</td>
+                        <td>79</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
         <span>&copy; 2025 CodeHotel. Todos os direitos reservados.</span>
-     </footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../assets/js/admin/pages/relatorios/index.js"></script>
 </body>
+
 </html>

@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br"></html>
+<html lang="pt-br">
+
+</html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeHotel - Dashboard</title>
     <link rel="stylesheet" href="../../assets/css/admin/pages/dashboard/index.css">
-    
+
 </head>
+
 <body>
     <!--header>nav>ul>li*8>a  emment-->
-     <header>
+    <header>
         <h1>CodeHotel</h1>
         <nav>
             <ul>
@@ -39,10 +43,100 @@
                 </li>
             </ul>
         </nav>
-     </header>
-     <main></main>
-     <footer>
+    </header>
+    <main>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Hóspedes Ativos</h3>
+                <p>128</p>
+                <div class="footer">
+                    <a href="../hospedes/index.html">Ver detalhes →</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Reservas Hoje</h3>
+                <p>42</p>
+                <div class="footer">
+                    <a href="../reservas/index.html">Ver detalhes →</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Quartos Ocupados</h3>
+                <p>76%</p>
+                <div class="footer">
+                    <a href="../quartos/index.html">Ver detalhes →</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Receita Mensal</h3>
+                <p>R$ 45.800</p>
+                <div class="footer">
+                    <a href="/relatorios/ver/1">Ver relatório →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reservas Recentes movidas antes dos gráficos -->
+        <section class="recent-reservations">
+            <h2>Reservas Recentes</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Hóspede</th>
+                            <th>Quarto</th>
+                            <th>Check-in</th>
+                            <th>Check-out</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>00127</td>
+                            <td>Carla Souza</td>
+                            <td>305</td>
+                            <td>25/07/2025</td>
+                            <td>30/07/2025</td>
+                            <td><span class="badge badge-confirmada">Confirmada</span></td>
+                        </tr>
+                        <tr>
+                            <td>00126</td>
+                            <td>Pedro Lima</td>
+                            <td>102</td>
+                            <td>24/07/2025</td>
+                            <td>28/07/2025</td>
+                            <td><span class="badge badge-pendente">Pendente</span></td>
+                        </tr>
+                        <tr>
+                            <td>00125</td>
+                            <td>Mariana Dias</td>
+                            <td>201</td>
+                            <td>23/07/2025</td>
+                            <td>26/07/2025</td>
+                            <td><span class="badge badge-cancelada">Cancelada</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="charts">
+            <div class="chart-container">
+                <h2>Receita Semanal</h2>
+                <canvas id="weeklyRevenueChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h2>Distribuição de Receita</h2>
+                <canvas id="revenuePieChart"></canvas>
+            </div>
+        </section>
+    </main>
+    <footer>
         <span>&copy; 2025 CodeHotel. Todos os direitos reservados.</span>
-     </footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../assets/js/admin/pages/dashboard/index.js"></script>
 </body>
+
 </html>
